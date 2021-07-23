@@ -3,7 +3,21 @@ import React from 'react';
 function Nav() {
     return (
         <header>
-            <h1>Nav</h1>
+            <h1>
+                <a href="/">Becca Wyland</a>
+            </h1>
+
+            <nav>
+                <ul className="flex-row">
+                    <li className="mx-2">
+                        <a href="#about">About Me</a>
+                    </li>
+
+                    <li>
+                    <a href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </nav>         
         </header>
     );
 }
