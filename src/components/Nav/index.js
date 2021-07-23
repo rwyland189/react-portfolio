@@ -13,8 +13,14 @@ function Nav() {
                         <a href="#about">About Me</a>
                     </li>
 
+                    {/* portfolio object here */}
+
                     <li>
-                    <a href="#contact">Contact Me</a>
+                        <a href="#contact">Contact Me</a>
+                    </li>
+
+                    <li>
+                        <a href="#resume">Resume</a>
                     </li>
                 </ul>
             </nav>         
