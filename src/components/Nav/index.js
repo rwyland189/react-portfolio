@@ -1,8 +1,17 @@
 import React from 'react';
 
-function Nav() {
+function Nav(props) {
+    const {
+        components = [],
+        setCurrentComponent,
+        currentComponent
+    } = props;
+
+
+
+
     return (
-        <header>
+        <header className="flex-row px-1">
             <h1>
                 <a href="/">Becca Wyland</a>
             </h1>
@@ -12,6 +21,8 @@ function Nav() {
                     <li className="mx-2">
                         <a href="#about">About Me</a>
                     </li>
+
+                    {}
 
                     {/* portfolio object here */}
 

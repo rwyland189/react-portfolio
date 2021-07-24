@@ -1,7 +1,6 @@
 import React from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
-// import photos here
-// import photo from "../../assets/small/portfolio/.png";
+import photo from "../../projects/books.jpg";
 
 function Portfolio(props) {
     const currentProject = {
