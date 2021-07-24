@@ -2,7 +2,7 @@ import React from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 import photo from "../../projects/books.jpg";
 
-function Portfolio(props) {
+function Portfolio() {
     const currentProject = {
         name: "project 1",
         description: "project 1 description"
