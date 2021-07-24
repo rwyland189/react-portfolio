@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav(props) {
     const {
