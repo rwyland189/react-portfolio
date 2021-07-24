@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav(props) {
@@ -8,8 +8,9 @@ function Nav(props) {
         currentComponent
     } = props;
 
-
-
+    useEffect(() => {
+        document.title = capitalizeFirstLetter(currentComponent.name);
+    }, [currentComponent]);
 
     return (
         <nav>
