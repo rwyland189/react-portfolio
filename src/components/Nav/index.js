@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 function Nav(props) {
     const {
@@ -11,31 +11,36 @@ function Nav(props) {
 
 
     return (
-        <header className="flex-row px-1">
-            <h1>
-                <a href="/">Becca Wyland</a>
-            </h1>
-
-            <nav>
-                <ul className="flex-row">
-                    <li className="mx-2">
-                        <a href="#about">About Me</a>
+        <nav>
+            <ul className="flex-row">
+                {components.map((Component) => (
+                    <li className={`mx-2 ${currentComponent.name === Component.name && 'navActive'}`}>
+                        <span onClick={() => {
+                            setCurrentComponent(Component)
+                        }}
+                        >
+                            {capitalizeFirstLetter(Component.name)}
+                        </span>
                     </li>
+                ))}
 
-                    {}
+                {/* <li className="mx-2">
+                    <a href="#about">About Me</a>
+                </li>
 
-                    {/* portfolio object here */}
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
 
-                    <li>
-                        <a href="#contact">Contact Me</a>
-                    </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
 
-                    <li>
-                        <a href="#resume">Resume</a>
-                    </li>
-                </ul>
-            </nav>         
-        </header>
+                <li>
+                    <a href="#resume">Resume</a>
+                </li> */}
+            </ul>
+        </nav>         
     );
 }
 
