@@ -3,7 +3,7 @@ import Nav from './components/Nav'
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Header from './components/Header';
-import Footer from './Footer';
+import Footer from './Footer'; 
 
 function App() {
   const [components] = useState([
